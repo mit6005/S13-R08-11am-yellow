@@ -19,6 +19,13 @@ public class Rest implements Music {
         this.duration = duration; 
         checkRep();
     }
+
+    /**
+     * @return duration of this note
+     */
+    public double duration() {
+        return duration;
+    }
     
     /**
      * @requires v != null
