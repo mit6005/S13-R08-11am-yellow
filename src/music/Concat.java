@@ -9,6 +9,8 @@ public class Concat implements Music {
     // Rep invariant: m1, m2 != null
     
     private void checkRep() {
+			if(first==null||second==null)
+				throw new Exception("At least one of the Music objects being concatenated is null!");
     }
     
     /**
