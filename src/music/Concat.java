@@ -30,10 +30,11 @@ public class Concat implements Music {
     }
     
     /**
+     * Returns the sum of first duration and second duration
      * @return duration of this concatenation
      */
     public double duration() {
-        return first.duration();
+        return first.duration()+second.duration();
     }
 
     /**
